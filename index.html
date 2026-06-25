@@ -2,25 +2,24 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <title>封面</title>
+  <title>新第一页</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-    img {
-      display: block;
-    }
+    body { margin: 0; padding: 0; }
+    img { display: block; width: 100%; }
+    a { display: block; }
   </style>
 </head>
 <body>
 
-  <img src="cover.jpg" usemap="#covermap">
+  <!-- 顶部导航图：点击回到这一页 -->
+  <a href="index.html">
+    <img src="logo.jpg">
+  </a>
 
-  <map name="covermap">
-    <!-- 把 coords 里的数字换成你封面图的实际坐标 -->
-    <area shape="rect" coords="80,830,400,1130" href="main.html" alt="进入主页">
-  </map>
+  <!-- 新第一页的图片，点击跳转到封面页 -->
+  <a href="cover.html">
+    <img src="index.jpg">
+  </a>
 
 </body>
 </html>

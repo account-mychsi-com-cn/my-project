@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日一言</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: #f5f0eb;
+      font-family: "PingFang SC", "微软雅黑", sans-serif;
+      padding: 40px 30px;
+    }
+
+    .date {
+      font-family: 'DM Serif Display', serif;  /* 英文数字专用字体 */
+      font-size: 28px;                          /* 变大 */
+      font-weight: bold;                        /* 加粗 */
+      color: #000000;                           /* 黑色 */
+      letter-spacing: 4px;
+      margin-bottom: 48px;
+    }
+
+    .content {
+      text-align: center;
+      max-width: 320px;
+    }
+
+    .line {
+      font-size: 24px;       /* 变大，原来是20px */
+      font-weight: bold;     /* 加粗 */
+      color: #333;
+      line-height: 2.2;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="date" id="today"></div>
+
+  <div class="content">
+    <div class="line">2027届校园招聘会专用</div>
+    <div class="line">欢迎光临！</div>
+    <div class="line">请通过..</div>
+  </div>
+
+  <script>
+    const d = new Date();
+    const year = d.getFullYear();
+    const month = d.getMonth() + 1;
+    const day = d.getDate();
+    document.getElementById('today').textContent = `${year} · ${month} · ${day}`;
+  </script>
+
+</body>
+</html>
